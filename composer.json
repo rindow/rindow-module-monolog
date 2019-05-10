@@ -1,0 +1,34 @@
+{
+    "name": "rindow/rindow-module-monolog",
+    "type": "library",
+    "description": "Rindow compatible module for Monolog",
+    "keywords": ["rindow","framework","log","monolog"],
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.3",
+        "monolog/monolog": "*",
+        "rindow/rindow-container": "*"
+    },
+    "require-dev": {
+        "monolog/monolog": "*",
+        "rindow/rindow-container": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rindow\\Module\\Monolog\\": "src/"
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://rindow.github.io/rindow-packagist/packages.json",
+            "options": {
+                "ssl": {
+                    "verify_peer": "true"
+                }
+            }
+        }
+    ],
+    "minimum-stability": "dev"
+}
