@@ -9,8 +9,10 @@ class Test extends TestCase
 {
     public function setUp()
     {
-        if(!file_exists(__DIR__.'/log'))
+        if(!file_exists(__DIR__.'/log')) {
 	        mkdir(__DIR__.'/log',true);
+	        chmod(__DIR__.'/log', 0777);
+        }
         $cache = new \Rindow\Stdlib\Cache\SimpleCache\FileCache(array('path'=>__DIR__.'/log'));
         $cache->clear();
     }
