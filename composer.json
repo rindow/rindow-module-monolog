@@ -7,28 +7,15 @@
     "require": {
         "php": ">=5.3.3",
         "monolog/monolog": "*",
-        "rindow/rindow-container": "*"
+        "rindow/rindow-container": "1.*"
     },
     "require-dev": {
         "monolog/monolog": "*",
-        "rindow/rindow-container": "*"
+        "rindow/rindow-container": "1.*"
     },
     "autoload": {
         "psr-0": {
             "Rindow\\Module\\Monolog\\": "src/"
         }
-    },
-
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://rindow.github.io/rindow-packagist/packages.json",
-            "options": {
-                "ssl": {
-                    "verify_peer": "true"
-                }
-            }
-        }
-    ],
-    "minimum-stability": "dev"
+    }
 }
